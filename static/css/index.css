@@ -1,0 +1,113 @@
+:root {
+    --dark-grey: #25262c;  
+    --dull-orange: #d6a64b;
+    --gray: #f7f8fa;
+    --white: #ffffff;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn,
+em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header,
+menu, section, summary, time, mark, audio, video {
+margin:0; padding:0; border:0; outline:0; font-size:100%;}
+article,aside,details,figcaption,figure,footer,header,menu,nav,section {display:block;}
+input, button, a:focus {outline: none;}
+a {text-decoration: none;}
+
+::-webkit-input-placeholder {color: #fff;}
+     :-ms-input-placeholder {color: #fff;}
+         ::-moz-placeholder {color: #fff; opacity: 1;}
+          :-moz-placeholder {color: #fff; opacity: 1;}
+
+html, body {margin: 0; padding:0; height: 100%; width: 100%; min-width: 320px; min-height: 600px;}
+body {position: relative; font-family: 'Open Sans', Arial, sans-serif; font-weight: 400;
+	background: #25262c url(../assets/pattern.svg);}
+
+img {border: 0;}
+input, button {outline: none; font-family: 'Open Sans', Arial, sans-serif; font-weight: 400;}
+form {padding: 0; margin: 0;}
+
+.narrow-block {max-width: 1200px; padding: 0 15px; margin: 0 auto; box-sizing: border-box;}
+.narrow-block:after {display: block; clear: both; height: 0; content: "";}
+.wide-block {max-width: 1300px; padding: 0; margin: 0 auto;}
+.wide-block:after {display: block; clear: both; height: 0; content: "";}
+
+.text-block {padding-left: 57px;}
+.block-line {position: relative; top: 60px; left: -57px; width: 42px; height: 0; border-top: 1px solid #d6a64b;}
+.text-block .block-up-title {height: 25px;}
+.text-block .block-title {padding-bottom: 20px; /*font-size: 64px; line-height: 64px; letter-spacing: 2.7px;*/ font-size: 38px; line-height: 38px; letter-spacing: 1.6px;}
+.orange-text {color: #d6a64b;}
+.text-block .block-text {font-size: 16px; line-height: 1.65; letter-spacing: 1px; letter-spacing: 0.7px; padding-bottom: 20px;}
+.text-block .block-button {font-size: 16px; line-height: 100%; font-weight: 700; letter-spacing: 2px; text-align: center;}
+
+/*Social block*/
+.social {display: block; width: 260px; margin: 0 auto;}
+.social a {display: block; float: left; width: 40px; height: 40px; margin-right: 15px;}
+.social a:last-child {margin-right: 0;}
+
+.social .upwork {background: transparent url(../assets/social/default/upwork.svg);}
+.social .facebook {background: transparent url(../assets/social/default/facebook.svg);}
+.social .instagram {background: transparent url(../assets/social/default/instagram.svg);}
+.social .steam {background: transparent url(../assets/social/default/steam.svg);}
+.social .linkedin {background: transparent url(../assets/social/default/linkedin.svg);}
+
+.social .upwork:hover {background: transparent url(../assets/social/hover/upwork.svg);}
+.social .facebook:hover {background: transparent url(../assets/social/hover/facebook.svg);}
+.social .instagram:hover {background: transparent url(../assets/social/hover/instagram.svg);}
+.social .steam:hover {background: transparent url(../assets/social/hover/steam.svg);}
+.social .linkedin:hover {background: transparent url(../assets/social/hover/linkedin.svg);}
+/*---*/
+
+/*Header block*/
+header .social {float: left; margin: 0;}
+.contact-us {display: block; float: right; width: 170px; height: 45px; border-radius: 0 0 4px 4px; background-color: #d6a64b;
+	font-family: Open Sans; font-size: 16px; line-height: 45px; font-weight: 700; letter-spacing: 2px; text-align: center; color: #ffffff;}
+
+nav {width: 100%; height: 45px; margin: 35px 0 120px; border: 1px dashed #d0d2d7; border: 1px dashed rgba(208,210,215,.3); border-left: none; border-right: none;
+	display: grid; grid-template-columns: 100px 70px 250px 70px 100px; justify-content: center; justify-items: center; grid-column-gap: 70px;}
+nav .nav-button {height: 45px; font-family: Open Sans; font-size: 14px; line-height: 45px; font-weight: 600; letter-spacing: 3px; text-align: center; color: #ffffff;}
+nav .nav-button a {width: 100%; height: 100%; color: #ffffff;}
+.button-1 {order: 1;}
+.button-2 {order: 2;}
+.button-3 {order: 4;}
+.button-4 {order: 5;}
+
+.logo {width: 250px; margin-top: -80px; order: 3;}
+
+.mobile-menu-button {display: none;}
+/*---*/
+
+/*We create only good games*/
+#we-create {width: 100%; padding: 40px 0 165px 0;}
+
+#we-create .text-block {float: left; width: 400px; padding-top: 65px; color: #fff;}
+#we-create .block-up-title img {display: inline-block; height: 16px; padding: 0; margin: 0 7px 0 0;}
+#we-create .block-up-title:last-child {margin-right: 0;}
+#we-create .block-text {}
+#we-create .block-button {width: 260px; height: 55px; background-color: #25262c; border: solid 1px #d6a64b; border-radius: 4px; box-sizing: border-box; line-height: 55px;}
+
+#we-create .games-theatre {position: relative; float: right; width: 710px; min-height: 450px;}
+#we-create .theatre-card {position: absolute; top: 0; width: 430px; min-height: 450px; background: #fff;}
+#we-create .theatre-card-content {width: 100%; height: 300px;}
+#we-create .theatre-card-text {width: 100%; min-height: 150px; padding: 28px; font-size: 14px; line-height: 1.7; color: #25262c; background: #ffffff; box-sizing: border-box;}
+#we-create .theatre-card-text .title {padding-bottom: 15px; font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; letter-spacing: 0.9px;}
+
+/*move to JS*/
+#we-create .card-1 {left: 0; right: auto; margin: auto; background: #cc6666; z-index: 1; transform: scale(.55,.55) translateX(-40%);}
+#we-create .card-2 {left: 140px; right: auto; margin: auto; background: #cccc66; z-index: 3;  transform: scale(.78,.78) translateX(-40%);}
+#we-create .card-3 {left: 0; right: 0; margin: auto; background: #66cccc; z-index: 5;}
+#we-create .card-4 {left: auto; right: 140px; margin: auto; background: #cccc66; z-index: 2;  transform: scale(.78,.78) translateX(40%);}
+#we-create .card-5 {left: auto; right: 0; margin: auto; background: #cc6666; z-index: 1; transform: scale(.55,.55) translateX(40%);}
+
+#we-create .card-1:after, #we-create .card-5:after {position: absolute; top: 0; left: 0; width: 100%; height: 100%; content: ""; background: rgba(0,0,0,.4); z-index: 2;}
+#we-create .card-2:after, #we-create .card-4:after {position: absolute; top: 0; left: 0; width: 100%; height: 100%; content: ""; background: rgba(0,0,0,.2); z-index: 4;}
+/*---*/
+
+/*---*/
+
+/*It's hard for you but it's simple for us*/
+#hard-simple {width: 100%; height: 570px;
+	background-color: #fff;	background-image: url(../assets/bg/noise_block2_left.png), url(../assets/bg/noise_block2_right.png);
+	background-repeat: no-repeat, no-repeat; background-position: left center, right center; background-size: auto 570px, auto 570px;}
+
+/*---*/
