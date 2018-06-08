@@ -37,11 +37,11 @@ form {padding: 0; margin: 0;}
 
 .text-block {padding-left: 57px;}
 .block-line {position: relative; top: 60px; left: -57px; width: 42px; height: 0; border-top: 1px solid #d6a64b;}
-.text-block .block-up-title {height: 25px; font-size: 14px; font-weight: 600; color: #25262c; letter-spacing: 1px; opacity: .5;}
-.text-block .block-title {padding-bottom: 20px; /*font-size: 64px; line-height: 64px; letter-spacing: 2.7px;*/ font-size: 38px; line-height: 38px; letter-spacing: 1.6px;}
+.block-up-title {height: 25px; font-size: 14px; font-weight: 600; color: #25262c; letter-spacing: 1px; opacity: .5;}
+.block-title {padding-bottom: 20px; /*font-size: 64px; line-height: 64px; letter-spacing: 2.7px;*/ font-size: 38px; line-height: 38px; letter-spacing: 1.6px;}
 .orange-text {color: #d6a64b;}
-.text-block .block-text {font-size: 16px; line-height: 1.65; letter-spacing: 1px; letter-spacing: 0.7px; padding-bottom: 20px;}
-.text-block .block-button {font-size: 16px; line-height: 100%; font-weight: 700; letter-spacing: 2px; text-align: center;}
+.block-text {font-size: 16px; line-height: 1.65; letter-spacing: 1px; letter-spacing: 0.7px; padding-bottom: 20px;}
+.block-button {font-size: 16px; line-height: 100%; font-weight: 700; letter-spacing: 2px; text-align: center; cursor: pointer;}
 
 /*Social block*/
 .social {display: block; width: 260px; margin: 0 auto;}
@@ -63,10 +63,10 @@ form {padding: 0; margin: 0;}
 
 /*Form: Send request*/
 form.send-request {width: 100%; height: 55px;}
-form.send-request input {display: block; float: left; width: 340px; height: 55px; border-radius: 3px; border: solid 1px #d0d2d7; box-sizing: border-box;
+form.send-request input {display: block; float: left; width: 340px; height: 55px; padding: 0 22px; border-radius: 3px; border: solid 1px #d0d2d7; box-sizing: border-box;
 	background-color: #ffffff; font-size: 14px; letter-spacing: normal; color: #25262c;}
 form.send-request button {display: block; float: right; width: 200px; height: 55px; border: none; border-radius: 3px;
-	font-size: 16px; font-weight: 700; letter-spacing: 1px; text-align: center; color: #ffffff;}
+	font-size: 16px; font-weight: 700; letter-spacing: 1px; text-align: center; color: #ffffff; cursor: pointer;}
 /*---*/
 
 /*------------*/
@@ -74,7 +74,7 @@ form.send-request button {display: block; float: right; width: 200px; height: 55
 /*Header block*/
 header .social {float: left; margin: 0;}
 .contact-us {display: block; float: right; width: 170px; height: 45px; border: none; border-radius: 0 0 4px 4px; background-color: #d6a64b;
-	font-family: Open Sans; font-size: 16px; line-height: 45px; font-weight: 700; letter-spacing: 2px; text-align: center; color: #ffffff;}
+	font-family: Open Sans; font-size: 16px; line-height: 45px; font-weight: 700; letter-spacing: 2px; text-align: center; color: #ffffff; cursor: pointer;}
 
 nav {position: relative; width: 100%; height: 45px; margin: 35px 0 120px; border: 1px dashed #d0d2d7; border: 1px dashed rgba(208,210,215,.3); border-left: none; border-right: none;
 	display: grid; grid-template-columns: 100px 70px 250px 70px 100px; justify-content: center; justify-items: center; grid-column-gap: 70px;}
@@ -85,7 +85,7 @@ nav .nav-button a {width: 100%; height: 100%; color: #ffffff;}
 .button-3 {order: 4;}
 .button-4 {order: 5;}
 
-.logo {width: 249px; height: 236px; margin-top: -80px; order: 3; z-index: 1;}
+header .logo {width: 249px; height: 236px; margin-top: -80px; order: 3; z-index: 1;}
 nav:before {position: absolute; left: 0; right: 0; top: -63px; width: 228px; height: 228px; margin: auto; background-color: #25262c; border-radius: 114px; content: ""; z-index: 0;} /*That is da fucking magic*/
 
 .mobile-menu-button {display: none;}
@@ -96,9 +96,8 @@ nav:before {position: absolute; left: 0; right: 0; top: -63px; width: 228px; hei
 
 #we-create .text-block {float: left; width: 400px; padding-top: 65px; color: #fff;}
 #we-create .block-up-title img {display: inline-block; height: 16px; padding: 0; margin: 0 7px 0 0;}
-#we-create .block-up-title:last-child {margin-right: 0;}
-#we-create .block-text {}
-#we-create .block-button {width: 260px; height: 55px; background-color: #25262c; border: solid 1px #d6a64b; border-radius: 4px; box-sizing: border-box; line-height: 55px;}
+#we-create .block-up-title .apple-logo {height: 18px; margin-top: -1px;}
+#we-create .block-button {width: 260px; height: 55px; background-color: #25262c; border: solid 1px #d6a64b; border-radius: 4px; box-sizing: border-box; color:#fff; line-height: 55px;}
 
 #we-create .games-theatre {position: relative; float: right; width: 710px; min-height: 450px;}
 #we-create .theatre-card {position: absolute; top: 0; width: 430px; min-height: 450px; background: #fff;}
@@ -140,7 +139,6 @@ nav:before {position: absolute; left: 0; right: 0; top: -63px; width: 228px; hei
 /*Only happy clients*/
 #only-happy {width: 100%; height: 455px; padding: 65px 0; box-sizing: border-box;
 	background: #fff url(../assets/bg/bg_block4.png) center center no-repeat; background-size: cover;}
-#only-happy .text-block {padding: 0;}
 #only-happy .stars {width: 116px; margin: 0 auto;
 	display: grid; grid-template-columns: repeat(5,16px); justify-content: center; justify-items: center; grid-column-gap: 9px;}
 #only-happy .block-up-title {width: 170px; margin: 0 auto; letter-spacing: normal; padding: 13px 0 8px; text-align: center;}
@@ -152,11 +150,58 @@ nav:before {position: absolute; left: 0; right: 0; top: -63px; width: 228px; hei
 /*---*/
 
 /*Any game for any device*/
-
-#any-device {width: 100%; height: 940px; box-sizing: border-box;
+#any-device {width: 100%; padding-bottom: 160px; box-sizing: border-box;
 	background-color: #fff;	background-image: url(../assets/bg/noise_block4_right.png), url(../assets/bg/noise_block4_left.png);
 	background-repeat: no-repeat, no-repeat; background-position: left center, right 25px; background-size: auto 940px, auto 778px;}
 
+#any-device .content-block {position: relative; float: left; width: 524px; height: 524px; margin: 165px 50px 0 0;}
+#any-device .devices {width: 100%; height: 100%;}
+#any-device .bg-circles {position: absolute; top: 32px; right: 0; left: 0; width: 268px; height: 268px; margin: 0 auto; padding: 92px; z-index: 0;
+	border: 2px dotted #4a4a4a; border-radius: 225px; background-color: #25262c; background-clip: content-box;}
+#any-device .logo {position: absolute; top: 132px; right: 0; left: 0; width: 249px; height: 236px; margin: 0 auto; z-index: 1;}
+
+/*I HATE THIS PART*/
+.device {position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; z-index: 1;}
+/*.device1 {transform: rotate(-90deg) translate(225px) rotate(90deg);}
+.device2 {transform: rotate(-60deg) translate(225px) rotate(60deg);}
+.device3 {transform: rotate(-30deg) translate(225px) rotate(30deg);}
+.device4 {transform: rotate(0deg) translate(225px) rotate(0deg);}
+.device5 {transform: rotate(30deg) translate(225px) rotate(-30deg);}
+.device6 {transform: rotate(60deg) translate(225px) rotate(-60deg);}
+.device7 {transform: rotate(90deg) translate(225px) rotate(-90deg);}
+.device8 {transform: rotate(120deg) translate(225px) rotate(-120deg);}
+.device9 {transform: rotate(150deg) translate(225px) rotate(-150deg);}
+.device10 {transform: rotate(180deg) translate(225px) rotate(-180deg);}
+.device11 {transform: rotate(210deg) translate(225px) rotate(-210deg);}
+.device12 {transform: rotate(240deg) translate(225px) rotate(-240deg);}*/
+.device1 {top: 0; bottom: auto; right: 216px; left: auto;}
+.device2 {top: 29px; bottom: auto; right: 105px; left: auto;}
+.device3 {top: 102px; bottom: auto; right: 29px; left: auto;}
+.device4 {top: 210px; bottom: auto; right: 0; left: auto;}
+.device5 {top: auto; bottom: 120px; right: 29px; left: auto;}
+.device6 {top: auto; bottom: 35px; right: 108px; left: auto;}
+.device7 {top: auto; bottom: 0; right: 216px; left: auto;}
+.device8 {top: auto; bottom: 35px; right: auto; left: 108px;}
+.device9 {top: auto; bottom: 120px; right: auto; left: 26px;}
+.device10 {top: 210px; bottom: auto; right: auto; left: 0;}
+.device11 {top: 102px; bottom: auto; right: auto; left: 26px;}
+.device12 {top: 29px; bottom: auto; right: auto; left: 105px;}
+
+/*---*/
+
+#any-device .text-block {float: left; width: 470px; padding-top: 200px; color: #4a4a4a;}
+#any-device .platforms {padding: 30px 0 65px;}
+#any-device .platforms img {display: inline-block; height: 32px; padding: 0; margin: 0 20px 0 0;}
+#any-device .platforms .apple-logo {height: 36px; margin-top: -2px;}
+
+#any-device #tell-us {width: 450px; height: 150px; border: 1px solid #d0d2d7; border-radius: 4px;}
+#any-device #tell-us .vr-icon {float: left; width: 115px; height: 100%; background: #fff url(../assets/devices/vr.svg) center center no-repeat;}
+#any-device #tell-us .vr-block {float: right; width: 335px; height: 100%; border-left: 1px solid #d0d2d7; box-sizing: border-box;}
+#any-device #tell-us .vr-text {width: 100%; height: 105px; padding: 35px 49px 26px 37px; box-sizing: border-box;
+	font-size: 16px; font-weight: 700;}
+#any-device #tell-us .vr-button {width: 100%; height: 45px; background: #d6a64b; border: none; border-radius: 0 0 4px 0;
+	font-size: 16px; font-weight: 700; color: #ffffff; cursor: pointer;}
+  
 /*---*/
 
 /*What we made really great*/
@@ -170,8 +215,12 @@ nav:before {position: absolute; left: 0; right: 0; top: -63px; width: 228px; hei
 /*---*/
 
 /*Connect*/
-#connect {width: 100%; height: 305px; box-sizing: border-box;
+#connect {width: 100%; padding: 74px 0 74px; box-sizing: border-box;
 	background: #fff url(../assets/bg/bg_block7.png) center center no-repeat; background-size: cover;}
+
+#connect .block-title {width: 100%; margin: 0 auto; padding: 0; font-size: 24px; font-weight: 700; line-height: normal; letter-spacing: 1px; text-align: center; color: #ffffff;}
+#connect .block-form {width: 570px; margin: 0 auto; padding: 35px 0 0; box-sizing: border-box;}
+#connect form button {background-color: #25262c;}
 /*---*/
 
 /*Footer*/
