@@ -1,0 +1,229 @@
+:root {
+    --dark-grey: #25262c;  
+    --gretish-brown: #4a4a4a;
+    --dull-orange: #d6a64b;
+    --gray: #f7f8fa;
+    --white: #ffffff;
+    --silver: #d0d2d7;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn,
+em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header,
+menu, section, summary, time, mark, audio, video {
+margin:0; padding:0; border:0; outline:0; font-size:100%;}
+article,aside,details,figcaption,figure,footer,header,menu,nav,section {display:block;}
+input, button, a:focus {outline: none;}
+a {text-decoration: none;}
+
+::-webkit-input-placeholder {color: #25262c; opacity: .4;}
+     :-ms-input-placeholder {color: #25262c; opacity: .4;}
+         ::-moz-placeholder {color: #25262c; opacity: .4;}
+          :-moz-placeholder {color: #25262c; opacity: .4;}
+
+html, body {margin: 0; padding:0; height: 100%; width: 100%; min-width: 320px; min-height: 600px;}
+body {position: relative; font-family: 'Open Sans', Arial, sans-serif; font-weight: 400; color: #4a4a4a;
+	background: #25262c url(../assets/pattern.svg);}
+
+img {border: 0;}
+input, button {outline: none; font-family: 'Open Sans', Arial, sans-serif; font-weight: 400;}
+form {padding: 0; margin: 0;}
+
+/*Unified blocks*/
+.narrow-block {display: block; max-width: 750px; padding: 0; margin: 0 auto;}
+.middle-block {display: block; max-width: 1200px; padding: 0 15px; margin: 0 auto; box-sizing: border-box;}
+.wide-block {display: block; max-width: 1300px; padding: 0 20px; margin: 0 auto; box-sizing: border-box;}
+.narrow-block:after, .middle-block:after, .wide-block:after {display: block; clear: both; height: 0; content: "";}
+
+.text-block {padding-left: 57px;}
+.block-line {position: relative; top: 60px; left: -57px; width: 42px; height: 0; border-top: 1px solid #d6a64b;}
+.block-up-title {height: 25px; font-size: 14px; font-weight: 600; color: #25262c; letter-spacing: 1px; opacity: .5;}
+.block-title {padding-bottom: 20px; /*font-size: 64px; line-height: 64px; letter-spacing: 2.7px;*/ font-size: 38px; line-height: 38px; letter-spacing: 1.6px;}
+.orange-text {color: #d6a64b;}
+.block-text {font-size: 16px; line-height: 1.65; letter-spacing: 1px; letter-spacing: 0.7px; padding-bottom: 20px;}
+.block-button {font-size: 16px; line-height: 100%; font-weight: 700; letter-spacing: 2px; text-align: center; cursor: pointer;}
+
+/*Social block*/
+.social {display: block; width: 260px; margin: 0 auto;}
+.social a {display: block; float: left; width: 40px; height: 40px; margin-right: 15px;}
+.social a:last-child {margin-right: 0;}
+
+.social .upwork {background: transparent url(../assets/social/default/upwork.svg);}
+.social .facebook {background: transparent url(../assets/social/default/facebook.svg);}
+.social .instagram {background: transparent url(../assets/social/default/instagram.svg);}
+.social .steam {background: transparent url(../assets/social/default/steam.svg);}
+.social .linkedin {background: transparent url(../assets/social/default/linkedin.svg);}
+
+.social .upwork:hover {background: transparent url(../assets/social/hover/upwork.svg);}
+.social .facebook:hover {background: transparent url(../assets/social/hover/facebook.svg);}
+.social .instagram:hover {background: transparent url(../assets/social/hover/instagram.svg);}
+.social .steam:hover {background: transparent url(../assets/social/hover/steam.svg);}
+.social .linkedin:hover {background: transparent url(../assets/social/hover/linkedin.svg);}
+/*---*/
+
+/*Form: Send request*/
+form.send-request {width: 100%; height: 55px;}
+form.send-request input {display: block; float: left; width: 340px; height: 55px; padding: 0 22px; border-radius: 3px; border: solid 1px #d0d2d7; box-sizing: border-box;
+	background-color: #ffffff; font-size: 14px; letter-spacing: normal; color: #25262c;}
+form.send-request button {display: block; float: right; width: 200px; height: 55px; border: none; border-radius: 3px;
+	font-size: 16px; font-weight: 700; letter-spacing: 1px; text-align: center; color: #ffffff; cursor: pointer;}
+/*---*/
+
+/*------------*/
+
+/*Header block*/
+header .social {float: left; margin: 0;}
+.contact-us {display: block; float: right; width: 170px; height: 45px; border: none; border-radius: 0 0 4px 4px; background-color: #d6a64b;
+	font-family: Open Sans; font-size: 16px; line-height: 45px; font-weight: 700; letter-spacing: 2px; text-align: center; color: #ffffff; cursor: pointer;}
+
+nav {position: relative; width: 100%; height: 45px; margin: 35px 0 120px; border: 1px dashed #d0d2d7; border: 1px dashed rgba(208,210,215,.3); border-left: none; border-right: none;
+	display: grid; grid-template-columns: 100px 70px 250px 70px 100px; justify-content: center; justify-items: center; grid-column-gap: 70px;}
+nav .nav-button {height: 45px; font-family: Open Sans; font-size: 14px; line-height: 45px; font-weight: 600; letter-spacing: 3px; text-align: center; color: #ffffff;}
+nav .nav-button a {width: 100%; height: 100%; color: #ffffff;}
+.button-1 {order: 1;}
+.button-2 {order: 2;}
+.button-3 {order: 4;}
+.button-4 {order: 5;}
+
+header .logo {width: 249px; height: 236px; margin-top: -80px; order: 3; z-index: 1;}
+nav:before {position: absolute; left: 0; right: 0; top: -63px; width: 228px; height: 228px; margin: auto; background-color: #25262c; border-radius: 114px; content: ""; z-index: 0;} /*That is da fucking magic*/
+
+.mobile-menu-button {display: none;}
+/*---*/
+
+/*We create only good games*/
+#we-create {width: 100%; padding: 40px 0 165px 0;}
+
+#we-create .text-block {float: left; width: 400px; padding-top: 65px; color: #fff;}
+#we-create .block-up-title img {display: inline-block; height: 16px; padding: 0; margin: 0 7px 0 0;}
+#we-create .block-up-title .apple-logo {height: 18px; margin-top: -1px;}
+#we-create .block-button {width: 260px; height: 55px; background-color: #25262c; border: solid 1px #d6a64b; border-radius: 4px; box-sizing: border-box; color:#fff; line-height: 55px;}
+
+#we-create .games-theatre {position: relative; float: right; width: 710px; min-height: 450px;}
+#we-create .theatre-card {position: absolute; top: 0; width: 430px; min-height: 450px; background: #fff; transition: transform .5s;}
+#we-create .theatre-card-content {width: 100%; height: 300px; background: transparent url(../assets/play-button.svg) center center no-repeat;}
+#we-create .theatre-card-text {width: 100%; min-height: 150px; padding: 28px; font-size: 14px; line-height: 1.7; color: #25262c; background: #ffffff; box-sizing: border-box;}
+#we-create .theatre-card-text .title {padding-bottom: 15px; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; letter-spacing: 0.9px;}
+
+/*move to JS*/
+#we-create .card-1 {left: 0; right: auto; margin: auto; background-color: #cc6666; z-index: 1; transform: translateX(-97px) scale(.55,.55);}
+#we-create .card-2 {left: 70px; right: auto; margin: auto; background-color: #cccc66; z-index: 3; transform: translateX(-48px) scale(.78,.78);}
+#we-create .card-3 {left: 0; right: 0; margin: auto; background-color: #66cccc; z-index: 5;}
+#we-create .card-4 {left: auto; right: 70px; margin: auto; background-color: #cccc66; z-index: 3; transform: translateX(48px) scale(.78,.78);}
+#we-create .card-5 {left: auto; right: 0; margin: auto; background-color: #cc6666; z-index: 1; transform: translateX(97px) scale(.55,.55);}
+
+#we-create .card-1:after, #we-create .card-5:after {position: absolute; top: 0; left: 0; width: 100%; height: 100%; content: ""; background: rgba(0,0,0,.4); z-index: 2;}
+#we-create .card-2:after, #we-create .card-4:after {position: absolute; top: 0; left: 0; width: 100%; height: 100%; content: ""; background: rgba(0,0,0,.2); z-index: 4;}
+
+#we-create .theatre-card:hover {transform: scale(1,1) translateX(0px); z-index: 6;} 
+#we-create .card-1:hover:after, #we-create .card-2:hover:after, #we-create .card-4:hover:after, #we-create .card-5:hover:after {width: 0; height: 0; background: transparent;}
+/*---*/
+
+/*---*/
+
+/*It's hard for you but it's simple for us*/
+#hard-simple {width: 100%; padding-bottom: 115px; color: #4a4a4a;
+	background-color: #fff;	background-image: url(../assets/bg/noise_block2_left.png), url(../assets/bg/noise_block2_right.png);
+	background-repeat: no-repeat, no-repeat; background-position: left center, right center; background-size: auto 570px, auto 570px;}
+
+#hard-simple .text-block {float: left; width: 520px; padding-top: 120px; color: #4a4a4a;}
+#hard-simple .content-block {float: right; width: 600px; padding: 190px 0 0 0;}
+#hard-simple .content-block .content-card {float: left; width: 300px; min-height: 100px; padding: 0 40px 40px 70px; box-sizing: border-box;}
+#hard-simple .content-block .content-card .card-title {float: left; padding-bottom: 9px; font-size: 16px; font-weight: 700;}
+#hard-simple .content-block .content-card .card-text {float: left; font-size: 14px; line-height: 1.7; color: #25262c;}
+
+#hard-simple .card-icon {display: block; float: left; width: 48px; margin: 0 0 0 -70px; padding: 0;}
+#hard-simple .card-icon:after {display: block; width: 42px; margin: 15px auto 0; content: ""; border-top: 1px solid #d0d2d7;}
+
+/*---*/
+
+/*Only happy clients*/
+#only-happy {width: 100%; height: 455px; padding: 65px 0; box-sizing: border-box;
+	background: #fff url(../assets/bg/bg_block4.png) center center no-repeat; background-size: cover;}
+#only-happy .stars {width: 116px; margin: 0 auto;
+	display: grid; grid-template-columns: repeat(5,16px); justify-content: center; justify-items: center; grid-column-gap: 9px;}
+#only-happy .block-up-title {width: 170px; margin: 0 auto; letter-spacing: normal; padding: 13px 0 8px; text-align: center;}
+#only-happy .block-title {width: 100%; margin: 0 auto; padding: 0; font-size: 24px; font-weight: 700; line-height: normal; letter-spacing: 1px; text-align: center; color: #4a4a4a;}
+#only-happy .block-form {width: 570px; margin: 0 auto; padding: 35px 0 28px; box-sizing: border-box;}
+#only-happy form button {background-color: #d6a64b;}
+
+#only-happy .social .social-text {width: 100%; float: left; clear: both; padding-bottom: 15px; font-size: 14px; color: #25262c; text-align: center;}
+/*---*/
+
+/*Any game for any device*/
+#any-device {width: 100%; padding-bottom: 160px; box-sizing: border-box;
+	background-color: #fff;	background-image: url(../assets/bg/noise_block4_right.png), url(../assets/bg/noise_block4_left.png);
+	background-repeat: no-repeat, no-repeat; background-position: left center, right 25px; background-size: auto 940px, auto 778px;}
+
+#any-device .content-block {position: relative; float: left; width: 524px; height: 524px; margin: 165px 50px 0 0;}
+#any-device .devices {width: 100%; height: 100%;}
+#any-device .bg-circles {position: absolute; top: 32px; right: 0; left: 0; width: 268px; height: 268px; margin: 0 auto; padding: 92px; z-index: 0;
+	border: 2px dotted #4a4a4a; border-radius: 225px; background-color: #25262c; background-clip: content-box;}
+#any-device .logo {position: absolute; top: 132px; right: 0; left: 0; width: 249px; height: 236px; margin: 0 auto; z-index: 1;}
+
+/*I HATE THIS PART*/
+.device {position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; z-index: 1;}
+/*.device1 {transform: rotate(-90deg) translate(225px) rotate(90deg);}
+.device2 {transform: rotate(-60deg) translate(225px) rotate(60deg);}
+.device3 {transform: rotate(-30deg) translate(225px) rotate(30deg);}
+.device4 {transform: rotate(0deg) translate(225px) rotate(0deg);}
+.device5 {transform: rotate(30deg) translate(225px) rotate(-30deg);}
+.device6 {transform: rotate(60deg) translate(225px) rotate(-60deg);}
+.device7 {transform: rotate(90deg) translate(225px) rotate(-90deg);}
+.device8 {transform: rotate(120deg) translate(225px) rotate(-120deg);}
+.device9 {transform: rotate(150deg) translate(225px) rotate(-150deg);}
+.device10 {transform: rotate(180deg) translate(225px) rotate(-180deg);}
+.device11 {transform: rotate(210deg) translate(225px) rotate(-210deg);}
+.device12 {transform: rotate(240deg) translate(225px) rotate(-240deg);}*/
+.device1 {top: 0; bottom: auto; right: 216px; left: auto;}
+.device2 {top: 29px; bottom: auto; right: 105px; left: auto;}
+.device3 {top: 102px; bottom: auto; right: 29px; left: auto;}
+.device4 {top: 210px; bottom: auto; right: 0; left: auto;}
+.device5 {top: auto; bottom: 120px; right: 29px; left: auto;}
+.device6 {top: auto; bottom: 35px; right: 108px; left: auto;}
+.device7 {top: auto; bottom: 0; right: 216px; left: auto;}
+.device8 {top: auto; bottom: 35px; right: auto; left: 108px;}
+.device9 {top: auto; bottom: 120px; right: auto; left: 26px;}
+.device10 {top: 210px; bottom: auto; right: auto; left: 0;}
+.device11 {top: 102px; bottom: auto; right: auto; left: 26px;}
+.device12 {top: 29px; bottom: auto; right: auto; left: 105px;}
+
+/*---*/
+
+#any-device .text-block {float: left; width: 470px; padding-top: 200px; color: #4a4a4a;}
+#any-device .platforms {padding: 30px 0 65px;}
+#any-device .platforms img {display: inline-block; height: 32px; padding: 0; margin: 0 20px 0 0;}
+#any-device .platforms .apple-logo {height: 36px; margin-top: -2px;}
+
+#any-device #tell-us {width: 450px; height: 150px; border: 1px solid #d0d2d7; border-radius: 4px;}
+#any-device #tell-us .vr-icon {float: left; width: 115px; height: 100%; background: #fff url(../assets/devices/vr.svg) center center no-repeat;}
+#any-device #tell-us .vr-block {float: right; width: 335px; height: 100%; border-left: 1px solid #d0d2d7; box-sizing: border-box;}
+#any-device #tell-us .vr-text {width: 100%; height: 105px; padding: 35px 49px 26px 37px; box-sizing: border-box;
+	font-size: 16px; font-weight: 700;}
+#any-device #tell-us .vr-button {width: 100%; height: 45px; background: #d6a64b; border: none; border-radius: 0 0 4px 0;
+	font-size: 16px; font-weight: 700; color: #ffffff; cursor: pointer;}
+  
+/*---*/
+
+/*What we made really great*/
+#great-games {width: 100%; height: 2300px; box-sizing: border-box;}
+/*---*/
+
+/*More than just numbers*/
+#numbers {width: 100%; height: 700px; box-sizing: border-box;
+	background-color: #fff;	background-image: url(../assets/bg/noise_block6_left.png),  url(../assets/bg/noise_block6_center.png), url(../assets/bg/noise_block6_right.png);
+	background-repeat: no-repeat, no-repeat, no-repeat; background-position: left top, center top, right top; background-size: auto 695px, 400px auto, auto 695px;}
+/*---*/
+
+/*Connect*/
+#connect {width: 100%; padding: 74px 0 74px; box-sizing: border-box;
+	background: #fff url(../assets/bg/bg_block7.png) center center no-repeat; background-size: cover;}
+
+#connect .block-title {width: 100%; margin: 0 auto; padding: 0; font-size: 24px; font-weight: 700; line-height: normal; letter-spacing: 1px; text-align: center; color: #ffffff;}
+#connect .block-form {width: 570px; margin: 0 auto; padding: 35px 0 0; box-sizing: border-box;}
+#connect form button {background-color: #25262c;}
+/*---*/
+
+/*Footer*/
+#footer {width: 100%; height: 515px; box-sizing: border-box;}
+/*---*/
